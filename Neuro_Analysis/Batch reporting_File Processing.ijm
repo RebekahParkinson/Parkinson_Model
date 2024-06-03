@@ -17,7 +17,7 @@ for (i = 0; i < list.length; i++) {
                 if (isOpen(maxProjTitle)) {
                     selectWindow(maxProjTitle);
                     saveAs("Tiff", dir + "MaxProj_Channel_" + ch + "_" + list[i] + ".tif");
-                    close();
+                    close(); 
                 }
         	run ("Close All");
             }
