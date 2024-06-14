@@ -15,21 +15,22 @@ This repository contains MATLAB code for analyzing mouse locomotor activity from
 
 ## Setup
 
-1. Download the following files and folders from this repository:
-   - `MouseActivity5.m`
+1. Download the following files and folders from this [Mouse Activity Analyzer on GitHub](https://github.com/HanLab-OSU/MouseActivity)
    - `xlwrite.m`
    - `poi_library` folder
-
-2. Ensure that the `poi_library` folder is in the same directory as the MATLAB source files.
+     
+2. Ensure that the `poi_library` folder is in the same directory as the MATLAB source files that you wish to run.
 
 ## Running the Analyzer
 
 To run the Mouse Activity Analyzer:
 
-1. Open MATLAB R2018b or MATLAB R2019a.
-2. Navigate to the folder containing `MouseActivity5.m`.
-3. Double-click on `MouseActivity5.m` to open it in MATLAB.
-4. Click the "Run" button and follow the onscreen instructions to analyze your video files.
+1. Open MATLAB (tested on R2018b, R2019a, and R2020b).
+2. Save 'MouseActivity_Adjusted.m' to folder containing `xlwrite.m` and `poi_library`
+3. Double-click on 'MouseActivity_Adjusted.m' to open it in MATLAB.
+4. Click the "Run" button
+5. select the video you wish to analyze within your directory window
+6. Draw your region of interest and select the parameters desired for analysing your specific video 
 
 ### Note:
 - Supported video formats: `.mp4` and `.mov`
@@ -49,7 +50,7 @@ For analyzing multiple videos in a folder:
 
 ## Parameters
 
-The following parameters have been predefined:
+The following parameters have been predefined in the batch processor:
 
 - `threshold = 0.8`
 - `time = 1 min (1800 frames)`
